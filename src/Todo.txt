@@ -1,0 +1,5 @@
+Spawn System:
+
+- Custom spawn point entity
+- Spawn Prefab for player detector and faction spawn points
+- Roles, medic, engineer, sniper, maybe more
