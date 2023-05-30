@@ -4,3 +4,9 @@ SubScene {
 Layer default {
  Index 0
 }
+Layer Spawns {
+ Index 1
+}
+Layer Managers {
+ Index 2
+}

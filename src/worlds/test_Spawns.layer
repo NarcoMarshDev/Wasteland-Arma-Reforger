@@ -1,0 +1,15 @@
+WR_SpawnPointDetectionTrigger {
+ coords 112.675 1.001 126.785
+ TriggerShapeType Sphere
+ SphereRadius 87
+ DrawShape 1
+ ShapeColor 1 0 0 0
+ {
+  WR_SpawnPoint : "{B235096D13DCD946}Prefabs/Spawning/Spawn Points/WR_SpawnPoint_US.et" {
+   coords 0 0 0
+  }
+ }
+}
+WR_SpawnPoint : "{B235096D13DCD946}Prefabs/Spawning/Spawn Points/WR_SpawnPoint_US.et" {
+ coords 116.091 1.001 54.93
+}

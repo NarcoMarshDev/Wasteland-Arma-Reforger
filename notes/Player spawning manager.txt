@@ -1,0 +1,20 @@
+WR_SpawnManagerComponent
+
+array: all WR_PlayerDetectionTrigger's (Every town)
+WR_RandomSpawnPoint: the single random spawn to act as a button on the map
+
+OnPlayerSpawned()
+
+- If spawn point is random spawn, do spawning logic from random town location
+- Check if spawn point has parent that inherits from player detector trigger
+- If not, return and let spawn happen directly on spawn point, must be special case
+- If any other case, get spawn radius from parent trigger and pick random X and Z coords within (use weighted random numbers to bias towards the outside of the area)
+- Get terrain Y coord at given X and Z, then perform a raycast down from 1 meter above.
+- If raycast length is < 1, calculate new Y coord where the collision happened.
+- Perform another raycast up 5 meters, if raycast length is < 1 go back and genereate new X and Z coords and try again since we must be inside.
+- If upwards raycast hits nothing, we have a valid spawn location and the player's position can be set.
+
+int nextPlayerDetector = 0;
+UpdatePlayerDetector()
+
+- Get next player detector and check for 

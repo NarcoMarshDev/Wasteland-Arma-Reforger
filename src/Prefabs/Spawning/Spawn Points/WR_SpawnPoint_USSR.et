@@ -1,0 +1,24 @@
+WR_SpawnPoint {
+ ID "5D7C7CC5715A3485"
+ components {
+  Hierarchy "{5D7C7CC560F96360}" {
+  }
+  SCR_MapDescriptorComponent "{5D7C7CC560F96377}" {
+   VisibleOnMap 0
+   MainType Spawnpoint
+  }
+  RplComponent "{5D7C7CC560F96489}" {
+   "Self Insert" 0
+   Streamable Disabled
+  }
+ }
+ coords 115.073 1.001 130.903
+ m_fSpawnRadius 10
+ m_fNoPlayerRadius 2
+ m_fNoSightRadius 0
+ m_sFaction "USSR"
+ m_Info SCR_UIInfo "{5D7C7CC560F964BE}" {
+  Name "USSR Point"
+  Icon "{50824EB9F2C215AB}UI/Textures/Flags/USSR-flag-base-3it.edds"
+ }
+}

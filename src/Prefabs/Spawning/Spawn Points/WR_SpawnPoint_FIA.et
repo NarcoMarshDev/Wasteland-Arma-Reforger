@@ -1,0 +1,24 @@
+WR_SpawnPoint {
+ ID "5D7C7CC5871268E0"
+ components {
+  Hierarchy "{5D7C7CC579879345}" {
+  }
+  SCR_MapDescriptorComponent "{5D7C7CC579879353}" {
+   VisibleOnMap 0
+   MainType Spawnpoint
+  }
+  RplComponent "{5D7C7CC579879365}" {
+   "Self Insert" 0
+   Streamable Disabled
+  }
+ }
+ coords 113.41 1.001 132.055
+ m_fSpawnRadius 10
+ m_fNoPlayerRadius 2
+ m_fNoSightRadius 0
+ m_sFaction "FIA"
+ m_Info SCR_UIInfo "{5D7C7CC5798794AD}" {
+  Name "FIA Point"
+  Icon "{B784E694BA4A7D40}UI/Textures/Flags/Everon-flag-base-3it.edds"
+ }
+}

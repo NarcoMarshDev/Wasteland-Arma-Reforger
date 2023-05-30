@@ -1,0 +1,29 @@
+GenericEntity : "{C1A2BB91E2E4A8D3}Prefabs/Weapons/Warheads/Warhead_Grenade.et" {
+ ID "9D9BE68EA2672F76"
+ components {
+  SoundComponent "{D092A75ECEFAE456}" {
+   Filenames {
+    "{87E0968F67279DFE}Sounds/Weapons/Explosives/_SharedData/Weapons_Explosives_ATMine_Generic.acp"
+   }
+  }
+  BaseTriggerComponent "{55129E81CBAA1390}" {
+   PROJECTILE_EFFECTS {
+    ExplosionDamageContainer "{567CB8E036FC1174}" {
+     ExplosionDamageEffects {
+      BaseExplosionDamageEffect "{588883BA92EA6A31}" {
+       DamageValue 30
+       DamageDistance 25
+      }
+      ExplosionFragmentationEffect "{567CB8E0247B859A}" {
+       DamageDistance 60
+       DamageFragmentCount 350
+       CaseWeight 200
+       FragMassScale 200
+      }
+     }
+     ChargeWeight 1000
+    }
+   }
+  }
+ }
+}

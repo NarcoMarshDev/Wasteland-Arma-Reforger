@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{B40AE0C2B02FCC38}Prefabs/Weapons/Ammo/Ammo_Artillery_Test.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

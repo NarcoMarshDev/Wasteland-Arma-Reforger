@@ -1,0 +1,24 @@
+WR_SpawnPoint {
+ ID "5D7C7CC542039E9A"
+ components {
+  Hierarchy "{5D7C7CC2B6E8D166}" {
+  }
+  SCR_MapDescriptorComponent "{5D7C7CC2B6E8D176}" {
+   VisibleOnMap 0
+   MainType Spawnpoint
+  }
+  RplComponent "{5D7C7CC2B6E8D288}" {
+   "Self Insert" 0
+   Streamable Disabled
+  }
+ }
+ coords 117.386 1.001 128.327
+ m_fSpawnRadius 10
+ m_fNoPlayerRadius 2
+ m_fNoSightRadius 0
+ m_sFaction "US"
+ m_Info SCR_UIInfo "{5D7C7CC2B6E8D2A2}" {
+  Name "US Point"
+  Icon "{46FB2FB2C2125A3C}UI/Textures/Flags/US-flag-base-3it.edds"
+ }
+}

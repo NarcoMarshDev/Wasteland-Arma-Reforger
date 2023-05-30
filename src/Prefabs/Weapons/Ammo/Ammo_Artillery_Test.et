@@ -1,0 +1,64 @@
+Projectile : "{D40A105437369C1D}Prefabs/Weapons/Core/Ammo_GrenadeLauncher_Base.et" {
+ ID "50C6F965BA00F9FA"
+ components {
+  AICombatPropertiesComponent "{59C92CB12877478B}" {
+   Priority 5
+   PriorityAgainstVehicles 40
+  }
+  CollisionTriggerComponent "{5D7C6ABAAD62DDD5}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{5D7C6ABAAD62DDEA}" {
+     EffectPrefab "{0145E25B14230938}Prefabs/Weapons/Warheads/Warhead_Artillery_Test.et"
+     ParticleEffect "{D200383E5A515C2B}Particles/Vehicle/Vehicle_explosion_BTR70_01.ptc"
+     SoundEvent "SOUND_EXPLOSION"
+    }
+   }
+   SafetyDistance 15
+  }
+  InventoryItemComponent "{52627A12350994B6}" {
+   Attributes SCR_ItemAttributeCollection "{52627A1234AD20A4}" {
+    ItemDisplayName UIInfo "{5D7C6ABAAD62DDE3}" {
+     Name "#AR-Magazine_M406_Name"
+     Description "#AR-Magazine_M406_Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5D7C6ABAAD62DDFE}" {
+     Weight 0.23
+     SizeSetupStrategy Manual
+     ItemDimensions 5 5 5
+     ItemVolume 100
+    }
+    m_Size SLOT_1x1
+   }
+  }
+  MagazineComponent "{5D7C6ABAAD62DDFA}" {
+   MagazineWell MagazineWellUS_UGL "{5D7C6ABAAD62DDF6}" {
+   }
+   UIInfo MagazineUIInfo "{5D7C6ABAAD62DDF0}" {
+    m_sAmmoCaliber "#AR-AmmunitionID_40x46mm"
+    m_sAmmoType "#AR-AmmoType_M406"
+    m_bShowAmmoTypeText 1
+    m_eAmmoTypeFlags HE
+    m_MagIndicator SCR_MagazineIndicatorConfiguration "{5874FAA4FA86F538}" : "{BE317699690AD7C3}Configs/WeaponInfo/MagazineIndicators/ugl_m406.conf" {
+    }
+   }
+   MaxAmmo 1
+  }
+  MeshObject "{851AA4A2AE0A56BF}" {
+   Object "{0B14D71F69360619}Assets/Weapons/Ammo/Grenades/M433/M433.xob"
+  }
+  Hierarchy "{5D7C6ABAAD62DD0E}" {
+  }
+  RigidBody "{5D7C6ABAAD62DD09}" {
+   LayerPreset "Projectile"
+   ModelGeometry 1
+  }
+  ShellMoveComponent "{20FB66C5FA209A29}" {
+   ProjectileEffects {
+   }
+   BallisticTableConfig "{D88C26E7EC2C0C01}Configs/Weapons/AIBallisiticTables/AIBT_Grenade_HE_M406.conf"
+   SubsonicFlybys "{C5131112CC1B6469}Sounds/Weapons/_SharedData/BulletFlybys/UGL/Weapons_BulletFlybys_UGL.acp"
+  }
+ }
+ ProjectileModel "{D79EBB1BB388141E}Assets/Weapons/Ammo/Grenades/M433/M433_projectile.xob"
+ CartridgeModel "{0B14D71F69360619}Assets/Weapons/Ammo/Grenades/M433/M433.xob"
+}
