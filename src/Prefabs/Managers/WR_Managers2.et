@@ -1,0 +1,65 @@
+GenericEntity {
+ ID "5D677165E331AD70"
+ coords 140.602 1.001 116.378
+ {
+  SCR_MapEntity MapEntity_Default1 : "{21C189074DAB7E90}Prefabs/World/DefaultWorld/MapEntity_Default.et" {
+   ID "5D677165E331AE8E"
+   coords 0 0 0
+  }
+  PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+   ID "5D677165E331AE8A"
+   coords 0 0 0
+  }
+  SCR_BaseGameMode GameMode_Base1 : "{0F307326459A1395}Prefabs/MP/Modes/GameMode_Base.et" {
+   ID "5D677165E331AEA8"
+   components {
+    SCR_RespawnBriefingComponent "{5D67716595D993F4}" {
+    }
+    SCR_RespawnMenuHandlerComponent "{5D67716599202FF1}" {
+    }
+    SCR_RespawnTimerComponent "{5D6771659CA80EE8}" {
+    }
+   }
+   coords 0 0 0
+  }
+  SCR_CameraManager SCR_CameraManager1 : "{33F9FD881E3700CC}Prefabs/World/Game/SCR_CameraManager.et" {
+   ID "5D677165E331AE87"
+   coords 0 0 0
+  }
+  SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+   ID "5D677165E331AEAC"
+   coords 0 0 0
+  }
+  TimeAndWeatherManagerEntity : "{A3BAF78F6F03315B}Prefabs/World/Game/TimeAndWeatherManager.et" {
+   ID "5D677165E331AE81"
+   coords 0 0 0
+   "Internal variant transition" 0
+   "Internal subvariant 0" 0
+   "Internal subvariant 1" 0
+  }
+  ProjectileSoundsManager : "{B4DA8B0024536625}Prefabs/World/Game/ProjectileSoundsManager.et" {
+   ID "5D677165E331AE82"
+   coords 0 0 0
+  }
+  RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
+   ID "5D677165E331AE9E"
+   coords 0 0 0
+  }
+  ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+   ID "5D677165E331AE9A"
+   coords 0 0 0
+  }
+  HitRegistrationManager HitRegManager1 : "{0EDA3D48791120DD}Prefabs/MP/HitRegManager.et" {
+   ID "5D677165E331AE95"
+   coords 0 0 0
+  }
+  SCR_MPDestructionManager : "{9BB369F2803C6F71}Prefabs/MP/MPDestructionManager.et" {
+   ID "5D677165E331AE90"
+   coords 0 0 0
+  }
+  SCR_LoadoutManager : "{B54D08AEA74A5354}Prefabs/MP/Managers/Loadouts/LoadoutManager_Editor.et" {
+   ID "5D677165E331AEAF"
+   coords 0 0 0
+  }
+ }
+}

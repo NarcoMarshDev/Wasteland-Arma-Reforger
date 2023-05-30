@@ -3,6 +3,18 @@ GameProject {
  GUID "5D4A068FB3C5B0B4"
  TITLE "Wasteland Arma Reforger"
  Dependencies {
-  "5A313B660B04D926" "58D0FB3206B6F859"
+  "58D0FB3206B6F859"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig HEADLESS {
+  }
  }
 }
