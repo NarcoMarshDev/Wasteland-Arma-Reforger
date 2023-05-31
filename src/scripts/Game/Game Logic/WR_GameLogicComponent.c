@@ -1,3 +1,4 @@
+// #UNUSED
 class WR_GameLogicComponentClass : SCR_BaseGameModeComponentClass
 {
 }

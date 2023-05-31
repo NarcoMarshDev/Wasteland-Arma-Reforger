@@ -10,3 +10,6 @@ Layer Spawns {
 Layer Managers {
  Index 2
 }
+Layer LootSpawning {
+ Index 3
+}

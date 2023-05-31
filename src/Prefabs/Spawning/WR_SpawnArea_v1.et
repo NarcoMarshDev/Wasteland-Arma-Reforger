@@ -1,0 +1,27 @@
+WR_SpawnPointDetectionTrigger {
+ ID "5D7C7CCBA1AB6333"
+ coords 111.384 1.001 107.499
+ TriggerShapeType Sphere
+ SphereRadius 250
+ DrawShape 1
+ ShapeColor 1 0 0 0
+ TriggerActivationType "Every query"
+ ClassFilter "SCR_ChimeraCharacter"
+ {
+  WR_SpawnPoint : "{4EDD324D57B0C88C}Prefabs/Spawning/Spawn Points/WR_SpawnPoint_FIA.et" {
+   ID "5D7C7CCBA1AB635F"
+   coords 0 0 0
+   m_bShowInDeployMapOnly 1
+  }
+  WR_SpawnPoint : "{983CEE7C0544074A}Prefabs/Spawning/Spawn Points/WR_SpawnPoint_USSR.et" {
+   ID "5D7C7CCBA1AB635C"
+   coords 0 0 0
+   m_bShowInDeployMapOnly 1
+  }
+  WR_SpawnPoint : "{B235096D13DCD946}Prefabs/Spawning/Spawn Points/WR_SpawnPoint_US.et" {
+   ID "5D7C7CCBA1AB6340"
+   coords 0 0 0
+   m_bShowInDeployMapOnly 1
+  }
+ }
+}

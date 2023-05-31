@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{1A5DA699E8F8924A}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Recon.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

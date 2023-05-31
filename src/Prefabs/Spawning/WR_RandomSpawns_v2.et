@@ -1,0 +1,118 @@
+GenericEntity {
+ ID "5D7C7C7AE4296CD4"
+ coords 3.774 1.001 6.902
+ {
+  $grp SCR_SpawnPoint {
+   {
+    ID "5D7C7C7AE4269E31"
+    m_sFaction "FIA_LOCKED"
+    m_bShowInDeployMapOnly 1
+    m_Info SCR_UIInfo "{5D7C7C74E1AD847C}" {
+     Name "default"
+     Icon "{BD2E2F871E6A3EBF}UI/Textures/Flags/Flag_Faction_Base.edds"
+    }
+   }
+   {
+    ID "5D7C7C7AE4294BC3"
+    m_sFaction "AI"
+    m_bShowInDeployMapOnly 1
+    m_Info SCR_UIInfo "{5D7C7C74E1AD847C}" {
+     Name "default"
+     Icon "{BD2E2F871E6A3EBF}UI/Textures/Flags/Flag_Faction_Base.edds"
+    }
+   }
+   {
+    ID "5D7C7C7AE4294BCD"
+    m_sFaction "USSR_LOCKED"
+    m_bShowInDeployMapOnly 1
+    m_Info SCR_UIInfo "{5D7C7C74E1AD847C}" {
+     Name "default"
+     Icon "{BD2E2F871E6A3EBF}UI/Textures/Flags/Flag_Faction_Base.edds"
+    }
+   }
+   {
+    ID "5D7C7C7AE4296CD7"
+    m_sFaction "US_LOCKED"
+    m_bShowInDeployMapOnly 1
+    m_Info SCR_UIInfo "{5D7C7C74E1AD847C}" {
+     Name "default"
+     Icon "{BD2E2F871E6A3EBF}UI/Textures/Flags/Flag_Faction_Base.edds"
+    }
+   }
+  }
+  $grp WR_RandomSpawnPoint {
+   {
+    ID "5D7C7C7AE42606C0"
+    components {
+     Hierarchy "{5D7C7C78A270B069}" {
+     }
+     SCR_MapDescriptorComponent "{5D7C7C78A270B06E}" {
+      VisibleOnMap 0
+      MainType Spawnpoint
+     }
+     RplComponent "{5D7C7C78A270B195}" {
+      "Self Insert" 0
+      Streamable Disabled
+     }
+    }
+    coords 50.097 0 31.604
+    m_fSpawnRadius 10
+    m_fNoPlayerRadius 2
+    m_fNoSightRadius 0
+    m_sFaction "FIA"
+    m_Info SCR_UIInfo "{5D7C7C78A270B19E}" {
+     Name "FIA Point"
+     Icon "{B784E694BA4A7D40}UI/Textures/Flags/Everon-flag-base-3it.edds"
+    }
+   }
+   {
+    ID "5D7C7C7AE4269E30"
+    components {
+     Hierarchy "{5D7C7C78A2708B3E}" {
+     }
+     SCR_MapDescriptorComponent "{5D7C7C78A2708B53}" {
+      VisibleOnMap 0
+      MainType Spawnpoint
+     }
+     RplComponent "{5D7C7C78A2708B5E}" {
+      "Self Insert" 0
+      Streamable Disabled
+     }
+    }
+    coords 47.354 0 20.57
+    m_fSpawnRadius 10
+    m_fNoPlayerRadius 2
+    m_fNoSightRadius 0
+    m_sFaction "US"
+    m_Info SCR_UIInfo "{5D7C7C78A2708B68}" {
+     Name "US Point"
+     Icon "{46FB2FB2C2125A3C}UI/Textures/Flags/US-flag-base-3it.edds"
+    }
+   }
+   {
+    ID "5D7C7C7AE426C39B"
+    components {
+     Hierarchy "{5D7C7C78A2708F58}" {
+     }
+     SCR_MapDescriptorComponent "{5D7C7C78A2708F41}" {
+      VisibleOnMap 0
+      MainType Spawnpoint
+     }
+     RplComponent "{5D7C7C78A2708F47}" {
+      "Self Insert" 0
+      Streamable Disabled
+     }
+    }
+    coords 33.5 0 20.485
+    m_fSpawnRadius 10
+    m_fNoPlayerRadius 2
+    m_fNoSightRadius 0
+    m_sFaction "USSR"
+    m_Info SCR_UIInfo "{5D7C7C78A2708F7B}" {
+     Name "USSR Point"
+     Icon "{50824EB9F2C215AB}UI/Textures/Flags/USSR-flag-base-3it.edds"
+    }
+   }
+  }
+ }
+}

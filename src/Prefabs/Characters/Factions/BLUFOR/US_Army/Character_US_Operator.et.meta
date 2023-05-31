@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F47FC756DCF337A2}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Operator.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

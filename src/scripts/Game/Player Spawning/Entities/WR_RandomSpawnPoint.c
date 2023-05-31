@@ -4,10 +4,10 @@ class WR_RandomSpawnPointClass: SCR_SpawnPointClass
 
 class WR_RandomSpawnPoint: SCR_SpawnPoint
 {
-	// Self assign as the random spawn point in the player spawn manager, if multiple random spawns exist, only the last one initialised will be valid
 	override void EOnInit(IEntity owner)
 	{
-		WR_PlayerSpawnManagerComponent.Cast( GetGame().GetGameMode().FindComponent(WR_PlayerSpawnManagerComponent) ).SetRandomSpawn(this);
+		super.EOnInit(owner);
+		GetInfo()._WR_SetName("Random Spawn Location...");
 	}
 	
 	override void EOnPlayerSpawn(IEntity entity)

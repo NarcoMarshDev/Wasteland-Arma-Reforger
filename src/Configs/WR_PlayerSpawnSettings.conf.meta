@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F47DA5C510D4C5B7}Configs/WR_PlayerSpawnSettings.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

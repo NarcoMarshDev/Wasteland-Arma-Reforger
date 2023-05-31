@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{36E28C628A2F83CB}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Recon.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

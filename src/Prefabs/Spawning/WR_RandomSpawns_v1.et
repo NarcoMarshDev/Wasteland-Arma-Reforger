@@ -1,0 +1,73 @@
+GenericEntity {
+ ID "5D7C7C776A1093C2"
+ coords 130.986 1.001 122.287
+ {
+  $grp SCR_SpawnPoint {
+   {
+    ID "5D7C7C776A108568"
+    m_sFaction "US_LOCKED"
+    m_bShowInDeployMapOnly 1
+    m_Info SCR_UIInfo "{5D7C7C74E1AD847C}" {
+     Name "default"
+     Icon "{BD2E2F871E6A3EBF}UI/Textures/Flags/Flag_Faction_Base.edds"
+    }
+   }
+   {
+    ID "5D7C7C776A1101E2"
+    m_sFaction "USSR_LOCKED"
+    m_bShowInDeployMapOnly 1
+    m_Info SCR_UIInfo "{5D7C7C74E1AD847C}" {
+     Name "default"
+     Icon "{BD2E2F871E6A3EBF}UI/Textures/Flags/Flag_Faction_Base.edds"
+    }
+   }
+   {
+    ID "5D7C7C776A1182C4"
+    m_sFaction "AI"
+    m_bShowInDeployMapOnly 1
+    m_Info SCR_UIInfo "{5D7C7C74E1AD847C}" {
+     Name "default"
+     Icon "{BD2E2F871E6A3EBF}UI/Textures/Flags/Flag_Faction_Base.edds"
+    }
+   }
+   {
+    ID "5D7C7C776A1182C5"
+    m_sFaction "FIA_LOCKED"
+    m_bShowInDeployMapOnly 1
+    m_Info SCR_UIInfo "{5D7C7C74E1AD847C}" {
+     Name "default"
+     Icon "{BD2E2F871E6A3EBF}UI/Textures/Flags/Flag_Faction_Base.edds"
+    }
+   }
+  }
+  $grp WR_RandomSpawnPoint {
+   {
+    ID "5D7C7C776A10856F"
+    m_sFaction "FIA"
+    m_bShowInDeployMapOnly 1
+    m_Info SCR_UIInfo "{5D7C7C748B4F7C4D}" {
+     Name "Random Spawn"
+     Icon "{B784E694BA4A7D40}UI/Textures/Flags/Everon-flag-base-3it.edds"
+    }
+   }
+   {
+    ID "5D7C7C776A10941E"
+    m_sFaction "US"
+    m_bShowInDeployMapOnly 1
+    m_Info SCR_UIInfo "{5D7C7C74783F45D3}" {
+     Name "Random Spawn"
+     Icon "{46FB2FB2C2125A3C}UI/Textures/Flags/US-flag-base-3it.edds"
+    }
+   }
+   {
+    ID "5D7C7C776A10941F"
+    m_sFaction "USSR"
+    m_bShowInDeployMapOnly 1
+    m_Info SCR_UIInfo "{5D7C7C7485C771DF}" {
+     Name "Random Spawn"
+     Icon "{50824EB9F2C215AB}UI/Textures/Flags/USSR-flag-base-3it.edds"
+    }
+   }
+  }
+ }
+}

@@ -1,4 +1,4 @@
-[WorkbenchPluginAttribute(name: "World Export Plugin", shortcut: "", wbModules: { "WorldEditor" }, category: "Wasteland Plugins", awesomeFontCode: 0xf56e)]
+[WorkbenchPluginAttribute(name: "Export World Entities", shortcut: "", wbModules: { "WorldEditor" }, category: "Wasteland Additions...", awesomeFontCode: 0xf56e)]
 class WorldExportPlugin : WorkbenchPlugin
 {
 	[Attribute(defvalue: "$WastelandArmaReforger:worlds/")]

@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{213A721E577AB561}worlds/Extras/test.topo"
+ Configurations {
+  MapTopoResourceClass PC {
+  }
+  MapTopoResourceClass XBOX_ONE : PC {
+  }
+  MapTopoResourceClass XBOX_SERIES : PC {
+  }
+  MapTopoResourceClass PS4 : PC {
+  }
+  MapTopoResourceClass HEADLESS : PC {
+  }
+ }
+}

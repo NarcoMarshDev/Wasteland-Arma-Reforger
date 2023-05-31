@@ -1,0 +1,34 @@
+$grp WR_SpawnPointDetectionTrigger : "{597C042C8B05C7AE}Prefabs/Spawning/WR_SpawnArea_v1.et" {
+ sp_EntreDeux {
+  coords 5753.27 217.751 7060.006
+  TownName "Entre Deux"
+ }
+ sp_Montignac {
+  coords 4798.778 168.285 7016.657
+  SphereRadius 400
+  TownName "Montignac"
+ }
+ sp_Figari {
+  coords 5224.307 64.348 5362.417
+  SphereRadius 200
+  TownName "Figari"
+ }
+ sp_Morton {
+  coords 5053.007 10.868 3902.21
+  SphereRadius 280
+  TownName "Morton"
+ }
+ sp_Chotain {
+  coords 7030.806 118.737 6021.506
+  SphereRadius 200
+  TownName "Chotain"
+ }
+ sp_Levie {
+  coords 7486.44 148.21 4746.132
+  SphereRadius 180
+  TownName "Levie"
+ }
+}
+GenericEntity RandomSpawns : "{F7EBBD2E09804A36}Prefabs/Spawning/WR_RandomSpawns_v2.et" {
+ coords 8608.646 0 7332.521
+}

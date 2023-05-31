@@ -1,3 +1,4 @@
+// #UNUSED
 class WR_PlayerSpawnManagerComponentClass: SCR_BaseGameModeComponentClass
 {
 }

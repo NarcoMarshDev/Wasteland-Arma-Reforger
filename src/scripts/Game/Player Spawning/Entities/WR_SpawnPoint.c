@@ -37,6 +37,12 @@ class WR_SpawnPoint: SCR_SpawnPoint
 		coords[2] = coords[2] + Math.RandomFloatInclusive(-triggerRadius, triggerRadius); // z
 		coords[1] = SCR_TerrainHelper.GetTerrainY(coords, GetGame().GetWorld(), true);    // y
 		
+		// if our y coord is close to the ocean height, we must be in the water so try again
+		if ( Math.AbsFloat( GetGame().GetWorld().GetOceanHeight(coords[0], coords[2]) - coords[1] ) < 0.5 )
+		{
+			return GetRandomSpawnLocation(triggerRadius, recursionDepthLimit, currentRecursionDepth + 1);
+		}
+		
 		// check from 1 meter above if the terrain matches actual ground height
 		TraceParam downTrace = MakeTraceParam(coords + vector.Up, coords, TraceFlags.ENTS | TraceFlags.WORLD);
 		float downDistance = GetGame().GetWorld().TraceMove(downTrace, null);

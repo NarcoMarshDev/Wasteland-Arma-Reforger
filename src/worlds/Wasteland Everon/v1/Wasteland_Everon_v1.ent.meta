@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{70907ACB3C16ED6F}worlds/Wasteland Everon/v1/Wasteland_Everon_v1.ent"
+ Configurations {
+  ENTResourceClass PC {
+  }
+  ENTResourceClass XBOX_ONE : PC {
+  }
+  ENTResourceClass XBOX_SERIES : PC {
+  }
+  ENTResourceClass PS4 : PC {
+  }
+  ENTResourceClass HEADLESS : PC {
+  }
+ }
+}
