@@ -1,0 +1,128 @@
+GenericEntity {
+ ID "5D8440455C0F02D3"
+ {
+  $grp WR_LootSpawner : "{4331180A129D60F4}Prefabs/Loot Spawners/WR_LS_Medical.et" {
+   {
+    ID "5D8440455C0E2FBC"
+    coords 4.23 0.982 -1.803
+   }
+   {
+    ID "5D8440455C0E2FBD"
+    coords 6.411 0.982 -1.813
+   }
+   {
+    ID "5D8440455C0EB16C"
+    coords -5.587 1.889 6.153
+   }
+   {
+    ID "5D8440455C0ECC1B"
+    coords 5.711 0.593 -14.157
+    angleY 25.241
+   }
+   {
+    ID "5D8440455C0EDF4C"
+    coords 5.788 0.602 -15.048
+   }
+   {
+    ID "5D8440455C0EDF4D"
+    coords 4.802 0.982 -9.138
+   }
+   {
+    ID "5D8440455C0EE53C"
+    coords -3.38 0.571 -7.924
+   }
+   {
+    ID "5D8440455C0EE53F"
+    coords -4.745 0.982 -1.782
+   }
+   {
+    ID "5D8440455C0EE720"
+    coords -2.731 0.982 -1.763
+   }
+   {
+    ID "5D8440455C0F02D8"
+    coords -6.879 1.889 1.732
+   }
+   {
+    ID "5D8440455C0F02D9"
+    coords -4.906 0.624 1.979
+   }
+   {
+    ID "5D8440455C0F8A88"
+    coords 4.701 0.982 -8.505
+   }
+   {
+    ID "5D8440455C0F8AB7"
+    coords 3.511 1.026 5.208
+   }
+   {
+    ID "5D8440455C0FB930"
+    coords 3.997 0.982 -1.202
+   }
+  }
+  $grp WR_LootSpawner : "{7FFB7823D64BB477}Prefabs/Loot Spawners/Military Base/WR_LS_MilitaryBaseDefault.et" {
+   {
+    ID "5D8440455C0E9225"
+    coords 3.492 1.026 -9.479
+    angleY -19.793
+   }
+   {
+    ID "5D8440455C0EB166"
+    coords -3.092 1.56 -1.028
+    angleY 87.487
+   }
+  }
+  $grp WR_LootSpawner : "{C5E463F9475B3291}Prefabs/Loot Spawners/Military Checkpoint/WR_LS_MilitaryCheckpointCommon.et" {
+   {
+    ID "5D8440455C0D4282"
+    coords 3.467 0.601 -7.86
+   }
+   {
+    ID "5D8440455C0D42B8"
+    coords 5.619 0.6 -7.785
+   }
+   {
+    ID "5D8440455C0E9220"
+    coords 3.33 0.611 -2.374
+   }
+   {
+    ID "5D8440455C0E9221"
+    coords 5.523 0.613 -2.343
+   }
+  }
+  $grp WR_LootSpawner : "{C70FF9095715A874}Prefabs/Loot Spawners/Civillian Industrial/WR_LS_CiviIndustrialCommon.et" {
+   {
+    ID "5D8440455C0D3018"
+    coords -6.467 0.119 -11.604
+   }
+   {
+    ID "5D8440455C0D429E"
+    coords -6.286 0.119 -9.945
+   }
+   {
+    ID "5D8440455C0D429F"
+    coords -6.344 0.119 -14.745
+   }
+  }
+  WR_LootSpawner : "{CA15608D1E878895}Prefabs/Loot Spawners/Military Base/WR_LS_MilitaryBaseRare.et" {
+   ID "5D8440455C0D301B"
+   coords -2.945 1.975 -9.325
+   angleY 90.117
+  }
+  $grp WR_LootSpawner : "{CC145D6BE4B9A387}Prefabs/Loot Spawners/Military Base/WR_LS_MilitaryBaseCommon.et" {
+   {
+    ID "5D8440455C0D301A"
+    coords -6.507 1.044 5.081
+    angleY 47.912
+   }
+   {
+    ID "5D8440455C0DF84F"
+    coords -3.569 0.563 -7.023
+   }
+  }
+  WR_LootSpawner : "{FF6A4FE680D6DEF3}Prefabs/Loot Spawners/Military Checkpoint/WR_LS_MilitaryCheckpointDefault.et" {
+   ID "5D8440455C0DF848"
+   coords 3.974 1.026 4.867
+  }
+ }
+}

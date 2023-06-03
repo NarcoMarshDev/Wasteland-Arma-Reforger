@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{CC145D6BE4B9A387}Prefabs/Loot Spawners/Military Base/WR_LS_MilitaryBaseCommon.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

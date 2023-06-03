@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{C70FF9095715A874}Prefabs/Loot Spawners/Civillian Industrial/WR_LS_CiviIndustrialCommon.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -5420,6 +5420,8 @@ GenericEntity {
     SCR_RespawnTimerComponent "{59695E091194ADF6}" {
      m_fRespawnTime 1
     }
+    WR_LootSpawningManagerComponent "{5D820BEB801AB8DD}" {
+    }
    }
    m_bAutoPlayerRespawn 0
   }

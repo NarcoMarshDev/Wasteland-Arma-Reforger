@@ -1,0 +1,28 @@
+GenericEntity LS_MilitaryBase {
+ coords 7504.445 165.76 4284.511
+}
+WR_LootSpawner : "{7FFB7823D64BB477}Prefabs/Loot Spawners/Military Base/WR_LS_MilitaryBaseDefault.et" {
+ coords 7455.864 164.359 4278.694
+}
+$grp WR_LootSpawner : "{CA15608D1E878895}Prefabs/Loot Spawners/Military Base/WR_LS_MilitaryBaseRare.et" {
+ {
+  coords 7453.515 164.181 4283.175
+ }
+ {
+  coords 7455.949 164.202 4287.541
+ }
+}
+$grp WR_LootSpawner : "{CC145D6BE4B9A387}Prefabs/Loot Spawners/Military Base/WR_LS_MilitaryBaseCommon.et" {
+ {
+  coords 7458.679 164.4 4281.131
+ }
+ {
+  coords 7452.231 164.136 4282.035
+ }
+ {
+  coords 7452.526 164.065 4285.322
+ }
+}
+WR_LootSpawner : "{FFC95F5D00422436}Prefabs/Loot Spawners/Military Base/WR_LS_MilitaryBaseRareGarunteed.et" {
+ coords 7460.623 164.456 4281.529
+}

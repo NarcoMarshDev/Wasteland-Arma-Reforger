@@ -31,4 +31,18 @@ $grp WR_SpawnPointDetectionTrigger : "{597C042C8B05C7AE}Prefabs/Spawning/WR_Spaw
 }
 GenericEntity RandomSpawns : "{F7EBBD2E09804A36}Prefabs/Spawning/WR_RandomSpawns_v2.et" {
  coords 8608.646 0 7332.521
+ {
+  WR_RandomSpawnPoint {
+   ID "5D7C7C7AE42606C0"
+   coords 0 0 0
+  }
+  WR_RandomSpawnPoint {
+   ID "5D7C7C7AE4269E30"
+   coords 0 0 0
+  }
+  WR_RandomSpawnPoint {
+   ID "5D7C7C7AE426C39B"
+   coords 0 0 0
+  }
+ }
 }

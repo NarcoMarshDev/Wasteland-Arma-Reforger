@@ -1,0 +1,6 @@
+WR_LootSpawner {
+ ID "5D820B7E2B34AB7B"
+ coords 7555.692 166.359 4251.793
+ LootSpawnProbability 0.5
+ LootTableID MilitaryBase
+}

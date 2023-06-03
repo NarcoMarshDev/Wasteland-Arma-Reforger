@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{C5E463F9475B3291}Prefabs/Loot Spawners/Military Checkpoint/WR_LS_MilitaryCheckpointCommon.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

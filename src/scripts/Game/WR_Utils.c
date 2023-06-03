@@ -8,6 +8,7 @@ FactionKey WR_FACTIONKEY_INDEPENDENT_LOCKED = "FIA_LOCKED";
 
 class WR_Utils
 {
+	//------------------------------------------------------------------------------------------------
 	static array<IEntity> GetAllChildren(IEntity ent)
 	{
 		IEntity child = ent.GetChildren();
@@ -21,5 +22,26 @@ class WR_Utils
 			child = child.GetSibling();
 		}
 		return allChildren;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	static IEntity SpawnPrefab(vector transform[4], ResourceName prefabName)
+	{
+		if (!prefabName)
+		{
+			Print("Missing Prefab: " + prefabName, LogLevel.ERROR);
+			return null;
+		}
+		if (!transform)
+		{
+			Print("No valid transform! Using default transform instead.", LogLevel.WARNING);
+			Math3D.MatrixIdentity4(transform)
+		}
+		Resource prefab = Resource.Load(prefabName);
+		EntitySpawnParams spawnParams = new EntitySpawnParams();
+		spawnParams.TransformMode = ETransformMode.WORLD;
+		spawnParams.Transform = transform;
+		
+		return GetGame().SpawnEntityPrefab(prefab, GetGame().GetWorld(), spawnParams);
 	}
 }

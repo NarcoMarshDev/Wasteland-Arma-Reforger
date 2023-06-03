@@ -1,0 +1,7 @@
+WR_LootSpawner {
+ ID "5D84400B03BEBCC3"
+ coords 100.467 1.608 152.353
+ LootRespawnDelaySeconds 1200
+ LootSpawnProbability 0.75
+ LootTableID Medical
+}

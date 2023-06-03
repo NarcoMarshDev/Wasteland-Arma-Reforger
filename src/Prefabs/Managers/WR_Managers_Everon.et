@@ -1,6 +1,6 @@
 GenericEntity {
  ID "5D7C7CFA625A0BB0"
- coords 137.145 1.001 123.632
+ coords 0 0 0
  {
   SCR_MapEntity MapEntity_Everon1 : "{E1B88C66BF6CA1F9}Prefabs/World/Game/MapEntity_Everon.et" {
    ID "5D7C7CFA625A0BB5"

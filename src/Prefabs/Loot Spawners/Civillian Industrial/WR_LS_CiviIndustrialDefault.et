@@ -1,0 +1,8 @@
+WR_LootSpawner {
+ ID "5D820B7EF9EC6C8D"
+ coords 7555.692 166.359 4251.793
+ LootRespawnDelaySeconds 1200
+ LootSpawnProbability 0.333
+ LootTableID CivillianIndustrial
+ LootRarityModifier 1
+}
