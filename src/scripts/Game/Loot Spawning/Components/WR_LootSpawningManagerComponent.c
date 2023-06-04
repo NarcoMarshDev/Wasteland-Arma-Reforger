@@ -1,4 +1,5 @@
 bool WR_LOOT_SPAWNER_USE_PHYSICS;
+int  WR_LOOT_SPAWNER_UPDATE_INTERVAL;
 
 class WR_LootSpawningManagerComponentClass: SCR_BaseGameModeComponentClass
 {
@@ -38,15 +39,32 @@ class WR_LootSpawningManagerComponent: SCR_BaseGameModeComponent
 	
 	//------------------------------------------------------------------------------------------------
 	override event void EOnInit(IEntity owner)
-	{		
+	{
+		GetGame().GetCallqueue().CallLater(UpdateNextSpawner, WR_LOOT_SPAWNER_UPDATE_INTERVAL, true);
+		//GetGame().GetCallqueue().CallLater(SetEventMask, 5000, false, owner, EntityEvent.FIXEDFRAME);
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	override void OnPostInit(IEntity owner)
+	{
+		SetEventMask(owner, EntityEvent.INIT);
+	}
+	
+	void WR_LootSpawningManagerComponent(IEntityComponentSource src, IEntity ent, IEntity parent)
+	{
 		// load settings config
 		WR_LootSpawningSettingsConfig config = SCR_ConfigHelperT<WR_LootSpawningSettingsConfig>.GetConfigObject("{E080A47BC9EA7184}Configs/WR_LootSpawningSettings.conf");
 		
 		globalLootRespawnDelayMultiplier 	 = config.GlobalLootRespawnDelayMultiplier;
 		globalLootSpawnProbabilityMultiplier = config.GlobalLootSpawnProbabilityMultiplier;
 		WR_LOOT_SPAWNER_USE_PHYSICS			 = config.PlaceLootWithPhysics;
-		int lootSpawnerUpdateInterval		 = config.LootSpawnerUpdateInterval;
+		WR_LOOT_SPAWNER_UPDATE_INTERVAL		 = config.LootSpawnerUpdateInterval;
 		
+		Print(globalLootRespawnDelayMultiplier);
+		Print(globalLootSpawnProbabilityMultiplier);
+		Print(WR_LOOT_SPAWNER_USE_PHYSICS);
+		Print(WR_LOOT_SPAWNER_UPDATE_INTERVAL);
+
 		allLootTables.Set(WR_LootTableID.Default, 				config.Default				);
 		allLootTables.Set(WR_LootTableID.CivillianResidential, 	config.CivillianResidential	);
 		allLootTables.Set(WR_LootTableID.CivillianGarage, 		config.CivillianGarage		);
@@ -60,15 +78,6 @@ class WR_LootSpawningManagerComponent: SCR_BaseGameModeComponent
 		allLootTables.Set(WR_LootTableID.RadZoneLarge, 			config.RadZoneLarge			);
 		allLootTables.Set(WR_LootTableID.RadIsland, 			config.RadIsland			);
 		allLootTables.Set(WR_LootTableID.AmmoDepot, 			config.AmmoDepot			);
-		
-		GetGame().GetCallqueue().CallLater(UpdateNextSpawner, lootSpawnerUpdateInterval, true);
-		//GetGame().GetCallqueue().CallLater(SetEventMask, 5000, false, owner, EntityEvent.FIXEDFRAME);
-	}
-	
-	//------------------------------------------------------------------------------------------------
-	override void OnPostInit(IEntity owner)
-	{
-		SetEventMask(owner, EntityEvent.INIT);
 	}
 }
 

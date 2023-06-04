@@ -122,13 +122,15 @@ class WR_LootSpawner: GenericEntity
 			phys.Destroy();
 			phys = Physics.CreateDynamic(newLoot, 1);
 		}
-		phys.SetDamping(0.1, 0.1);
+		phys.SetDamping(0.5, 0.5);
 		phys.ChangeSimulationState(SimulationState.SIMULATION);
 		phys.SetInteractionLayer(EPhysicsLayerPresets.Building);
 		phys.SetActive(ActiveState.ACTIVE);
 		
 		float force = 0.0005 * phys.GetMass();
-		phys.ApplyImpulseAt(phys.GetCenterOfMass() + "0 0.1 0", Vector(force, force, force));
+		//phys.ApplyImpulseAt(phys.GetCenterOfMass() + "0 0.01 0", Vector(force, 0, force));
+		phys.SetAngularVelocity("0.1 0.1 0.1");
+		phys.SetVelocity("0.01 0.01 0.01");
 		
 		// after 3 seconds, set the entity back to inactive to save performance
 		GetGame().GetCallqueue().CallLater(SetLootInactive, 3000, false, newLoot);
@@ -157,6 +159,7 @@ class WR_LootSpawner: GenericEntity
 		LootSpawnProbability *= manager.globalLootSpawnProbabilityMultiplier;
 		Print(LootSpawnProbability);
 		manager.RegisterLootSpawn(this);
+		Print(manager.allLootSpawners);
 	}
 	
 	void WR_LootSpawner(IEntitySource src, IEntity parent)

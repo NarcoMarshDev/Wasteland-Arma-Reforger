@@ -410,6 +410,7 @@ GenericEntity {
 }
 SCR_AirstrikePrototype {
  coords 141.002 1.001 117.577
+ Flags 2097155
  m_ProjectilesToTrigger {
   "{B40AE0C2B02FCC38}Prefabs/Weapons/Ammo/Ammo_Artillery_Test.et"
  }

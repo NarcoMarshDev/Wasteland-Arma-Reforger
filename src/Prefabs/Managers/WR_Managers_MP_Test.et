@@ -5401,6 +5401,7 @@ GenericEntity {
      m_bIsPlayable 0
     }
    }
+   m_bCanChangeFactionsPlayable 0
   }
   PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
    ID "5D7C7CFA96060C8A"

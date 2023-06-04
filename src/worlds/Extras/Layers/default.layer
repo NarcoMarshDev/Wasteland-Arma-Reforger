@@ -1,0 +1,20 @@
+GenericEntity : "{2F910CA8BA326690}Prefabs/Managers/WR_Managers_Everon.et" {
+ coords 1124.968 39.011 2383.17
+ {
+  SCR_MapEntity {
+   ID "5D7C7CFA625A0BB5"
+   "Map Geometry Data" "{0DD089CCD442399A}worlds/Arland/Arland.topo"
+   "Satellite background image" "{F98F3D2CBA523091}UI/Textures/Map/worlds/Arland/ArlandRasterized.edds"
+  }
+  SCR_BaseGameMode {
+   ID "5D7C7CFA625A0BCE"
+   components {
+    WR_LootSpawningManagerComponent "{5D87152A54BD942D}" {
+    }
+   }
+  }
+ }
+}
+SCR_DestructibleBuildingEntity : "{9E1B1BC411CE2CBC}Prefabs/Structures/Military/Houses/Barracks_01/Barracks_01_medical_base.et" {
+ coords 1107.645 0.011 2381.13
+}
