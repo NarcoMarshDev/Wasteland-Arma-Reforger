@@ -1,9 +1,0 @@
-SCR_DestructibleBuildingEntity : "{80D7D3EAABADBD44}Prefabs/Structures/Military/Houses/Barracks_01/Barracks_01_Base.et" {
- ID "F0DBA538AC2A0552"
- {
-  GenericEntity : "{1F1BAE0D992F4443}Prefabs/Structures/Military/Houses/Barracks_01/WR_Barracks_Medical_LootSpawners.et" {
-   ID "5D864D4F41703644"
-   coords 0 0 0
-  }
- }
-}

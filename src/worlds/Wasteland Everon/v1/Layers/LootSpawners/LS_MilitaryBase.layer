@@ -1,0 +1,16 @@
+WR_LootSpawner : "{7FFB7823D64BB477}Prefabs/Loot Spawners/Military Base/WR_LS_MilitaryBaseDefault.et" {
+ coords 7471.438 167.543 4268.098
+ angleY 10.145
+}
+$grp WR_LootSpawner : "{CC145D6BE4B9A387}Prefabs/Loot Spawners/Military Base/WR_LS_MilitaryBaseCommon.et" {
+ {
+  coords 7464.575 166.693 4272.881
+ }
+ {
+  coords 7464.838 166.704 4274.198
+  angleY 20.56
+ }
+ {
+  coords 7464.072 166.59 4267.462
+ }
+}
