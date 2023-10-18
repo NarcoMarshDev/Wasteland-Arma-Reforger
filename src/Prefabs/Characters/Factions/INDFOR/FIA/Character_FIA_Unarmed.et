@@ -16,6 +16,8 @@ SCR_ChimeraCharacter : "{7A9EE19AB67B298B}Prefabs/Characters/Factions/INDFOR/FIA
     }
    }
   }
+  WR_CharacterBuildingInteractionComponent "{5DA6DB3A335D6E62}" {
+  }
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
    AttachType InventoryStorageSlot "{0C3DA650B52E120B}" {
    }

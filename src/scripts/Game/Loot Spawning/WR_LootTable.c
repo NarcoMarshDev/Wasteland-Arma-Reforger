@@ -12,7 +12,8 @@ enum WR_LootTableID
 	RadZoneSmall,			// basic weapons with rare chance for higher grade weapons. Tier 2 component spawns and occasional tier 3 components. Occasional keycode spawns
 	RadZoneLarge,			// similar loot to military base with backup rad gear and more tier 3 components. Also spawns codes for ammo depots and rarely weapon blueprints
 	RadIsland,				// same as large rad and military base, but spawns keys/key fragments for uplinks
-	AmmoDepot				// spawns rare weapons and large quantities of ammo, as well as weapon blueprints
+	AmmoDepot,				// spawns rare weapons and large quantities of ammo, as well as weapon blueprints
+	VEHICLE_SPAWN			// loot table used for vehicle spawners, not loot items
 }
 
 [BaseContainerProps()]

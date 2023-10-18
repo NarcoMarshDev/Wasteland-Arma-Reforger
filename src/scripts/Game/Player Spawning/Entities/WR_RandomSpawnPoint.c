@@ -10,8 +10,9 @@ class WR_RandomSpawnPoint: SCR_SpawnPoint
 		GetInfo()._WR_SetName("Random Spawn Location...");
 	}
 	
-	override void EOnPlayerSpawn(IEntity entity)
+	override bool PrepareSpawnedEntity_S(SCR_SpawnRequestComponent requestComponent, SCR_SpawnData data, IEntity entity)
 	{
+		super.PrepareSpawnedEntity_S(requestComponent, data, entity);
 		SCR_SpawnPoint randomSpawn;
 		for (int i = 0; i < CountSpawnPoints(); i++)
 		{
@@ -25,10 +26,11 @@ class WR_RandomSpawnPoint: SCR_SpawnPoint
 		WR_SpawnPointDetectionTrigger trigger = WR_SpawnPointDetectionTrigger.Cast( randomSpawn.GetParent() );
 		if (!trigger)
 		{
-			Print("WR_SpawnPoint @ " + GetOrigin() + " has no trigger!", LogLevel.WARNING); return;
+			Print("WR_SpawnPoint @ " + GetOrigin() + " has no trigger!", LogLevel.WARNING); return false;
 		}
 		
 		float triggerRadius = trigger.GetSphereRadius();
 		entity.SetOrigin( WR_SpawnPoint.Cast(randomSpawn).GetRandomSpawnLocation(triggerRadius, WR_SpawnPoint.RECURSION_LIMIT) );
+		return true;
 	}
 }

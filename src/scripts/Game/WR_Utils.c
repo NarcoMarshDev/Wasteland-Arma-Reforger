@@ -44,4 +44,9 @@ class WR_Utils
 		
 		return GetGame().SpawnEntityPrefab(prefab, GetGame().GetWorld(), spawnParams);
 	}
+	//------------------------------------------------------------------------------------------------
+	static WR_BuildingObjectComponent GetBuildingObjectComponent(IEntity ent)
+	{
+		return WR_BuildingObjectComponent.Cast( ent.FindComponent(WR_BuildingObjectComponent) );
+	}
 }

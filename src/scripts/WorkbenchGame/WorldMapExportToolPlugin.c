@@ -1,3 +1,4 @@
+#ifdef NON_WASTELAND
 [WorkbenchPluginAttribute("Export Map data (Custom)", "Export data of various types from the current world", "", category: "Wasteland Additions...", wbModules: {"WorldEditor"}, awesomeFontCode: 0xf0ac)]
 class WorldMapExportToolCustom: WorkbenchPlugin //WorldEditorTool
 {
@@ -106,6 +107,7 @@ class WorldMapExportToolCustom: WorkbenchPlugin //WorldEditorTool
 		api.GetWorldPath(worldPath);
 
 		WBProgressDialog progress = new WBProgressDialog("Processing", we);
+		MapDataExporter exporter = new MapDataExporter();
 
 
 		exportPath = destinationPath.GetPath();
@@ -128,7 +130,7 @@ class WorldMapExportToolCustom: WorkbenchPlugin //WorldEditorTool
 			if(!saveWaterBodies) saveFlags = saveFlags | ExcludeSaveFlags.ExcludeSaveWaterBodies;
 			if(!saveHills) saveFlags = saveFlags | ExcludeSaveFlags.ExcludeSaveHills;
 
-			DataExportErrorType result = MapDataExporter.ExportData(EMapDataType.Geometry2D, exportPath, worldPath, hillMinimumHeight, ignoreGeneratorAreas, generateFlags, saveFlags);
+			DataExportErrorType result = exporter.ExportData(EMapDataType.Geometry2D, exportPath, worldPath, hillMinimumHeight, ignoreGeneratorAreas, generateFlags, saveFlags);
 			if(result != DataExportErrorType.DataExportErrorNone)
 			{
 				string reason = "";
@@ -149,7 +151,7 @@ class WorldMapExportToolCustom: WorkbenchPlugin //WorldEditorTool
 		else if (type == EMapDataExportType.Soundmap)
 		{
 			Print("Exporting Soundmap...");
-			DataExportErrorType result = MapDataExporter.ExportData(EMapDataType.Soundmap, exportPath, worldPath);
+			DataExportErrorType result = exporter.ExportData(EMapDataType.Soundmap, exportPath, worldPath);
 			if(result != DataExportErrorType.DataExportErrorNone)
 			{
 				string reason = "";
@@ -172,7 +174,7 @@ class WorldMapExportToolCustom: WorkbenchPlugin //WorldEditorTool
 		else if (type == EMapDataExportType.Rasterization)
 		{
 			Print("Exporting map rasterization...");
-			DataExportErrorType result = MapDataExporter.ExportRasterization(exportPath, worldPath, landColor, oceanColor, scaleLand, scaleOcean, heightScale, depthScale, depthLerpMeters, shadeIntensity, heightIntensity, includeGeneratorAreas, forestAreaColor, forestAreaIntensity, otherAreaColor, otherAreaIntensity);
+			DataExportErrorType result = exporter.ExportRasterization(exportPath, worldPath, landColor, oceanColor, scaleLand, scaleOcean, heightScale, depthScale, depthLerpMeters, shadeIntensity, heightIntensity, includeGeneratorAreas, forestAreaColor, forestAreaIntensity, otherAreaColor, otherAreaIntensity);
 			if(result != DataExportErrorType.DataExportErrorNone)
 			{
 				string reason = "";
@@ -194,3 +196,4 @@ class WorldMapExportToolCustom: WorkbenchPlugin //WorldEditorTool
 		return true;
 	}
 };
+#endif

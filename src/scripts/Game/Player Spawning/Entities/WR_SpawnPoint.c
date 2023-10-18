@@ -6,18 +6,20 @@ class WR_SpawnPoint: SCR_SpawnPoint
 {
 	static int RECURSION_LIMIT = 10;
 	
-	override void EOnPlayerSpawn(IEntity entity)
+	override bool PrepareSpawnedEntity_S(SCR_SpawnRequestComponent requestComponent, SCR_SpawnData data, IEntity entity)
 	{
+		super.PrepareSpawnedEntity_S(requestComponent, data, entity);
 		WR_SpawnPointDetectionTrigger trigger = WR_SpawnPointDetectionTrigger.Cast( GetParent() );
 		
 		// if we're not part of a town spawn heirarchy, we must be broken so just spawn directly on the point
 		if (!trigger)
 		{
-			Print("WR_SpawnPoint @ " + GetOrigin() + " has no trigger!", LogLevel.WARNING); return;
+			Print("WR_SpawnPoint @ " + GetOrigin() + " has no trigger!", LogLevel.WARNING); return false;
 		}
 		
 		float triggerRadius = trigger.GetSphereRadius();
 		entity.SetOrigin( GetRandomSpawnLocation(triggerRadius, RECURSION_LIMIT) );
+		return true;
 	}
 	
 	// Recursive function to attempt to find a valid spawn location
